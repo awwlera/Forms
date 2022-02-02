@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/Inter/inter-black-webfont.woff2') format('woff2'),
+         url('../fonts/Inter/inter-black-webfont.woff') format('woff'),
+         url('../fonts/Inter/inter-black-webfont.ttf') format('truetype'),
+         url('../fonts/Inter/inter-black-webfont.svg#interblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'inter';

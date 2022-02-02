@@ -5,8 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create an Account</title>
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
-    
+    <main class="main">
+        <div class="container flex-container">
+            <div class="card card-account">
+                <div class="card-account__title-holder">
+                    <h1 class="card-account__title">Create an Account</h1>
+                </div>
+                <form action="#" class="form card-account__form">
+                    <div class="form__row flex-container">
+                        <div class="input-holder">
+                            <label for="fname" class="form__label">First name</label>
+                            <input type="text" id="fname" name="fname" class="form__input" required>
+                        </div>
+                        <div class="input-holder">
+                            <label for="lname" class="form__label">Last name</label> 
+                            <input type="text" id="lname" name="lname" class="form__input" required> 
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form__input form__input_long" required>
+                        <span class="form__instruction">
+                            We'll never share your email with anyone else.
+                        </span>
+                    </div>
+                    <div class="form__row radio">
+                        <ul class="radio__list">
+                            <li class="radio__item">
+                                <input type="radio" name="gender" id="male" value="male" class="radio__input" checked>
+                                <label for="male" class="radio__label">Male</label>
+                            </li>
+                            <li class="radio__item">
+                                <input type="radio" name="gender" id="female" value="female" class="radio__input">
+                                <label for="female" class="radio__label">Female</label>
+                            </li>
+                        </ul>        
+                    </div>
+                    <div class="form__row flex-container">
+                        <div class="input-holder">
+                            <label for="counrty" class="form__label">Country</label>
+                            <select name="counrty" id="country" class="form__select">
+                                <option>Select</option>
+                                <option value="ua">Ukraine</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="fr">France</option>
+                                <option value="es">Spain</option>
+                                <option value="it">Italy</option>
+                                <option value="pl">Poland</option>
+                                <option value="de">Germany</option>
+                                <option value="no">Norway</option>
+                                <option value="at">Australia</option>
+                            </select>
+                        </div>
+                        <div class="input-holder">
+                            <label for="city" class="form__label">City</label>
+                            <input type="text" id="city" name="city" class="form__input" required>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button class="form__btn form__btn_long" type="submit">Sign Up</button>
+                        <span class="form__instruction btn-instruction">
+                            By clicking the 'Sign Up' button, you confirm that you accept our 
+                            <a class="link" href="#">Terms of Use</a> and 
+                            <a class="link" href="#">Privacy Policy</a>
+                        </span>
+                    </div>
+                </form>
+                <div class="card-account__footer">
+                    <span class="card-account__footer-text">Have an account?
+                        <a class="link card-account__footer-link" href="#">Log in</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="card card-profile">
+                <div class="card-profile__title-holder">
+                    <h2 class="card-profile__title">Profile</h2>
+                </div>
+                <form action="#" class="form card-profile__form">
+                    <div class="form__row userpic flex-container">
+                        <div class="userpic__img-holder">
+                            <img class="userpic__img" src="src/images/avatar.svg" alt="avatar">
+                        </div>
+                        <div class="userpic__input-holder">
+                            <input class="userpic__input-file" type="file" name="userpic">
+                            <button class="userpic__btn-upload">
+                                <img src="src/images/photo-camera.svg" alt="photo-camera" class="userpic__icon">
+                            </button>
+                            <button class="form__btn_reset" type="reset">
+                                <img src="src/images/trash-bin.svg" alt="" class="form__btn-pic">
+                            </button>
+                            <span class="form__instruction">Up to 1 MB (300x300 px)</span>
+                        </div>        
+                    </div>
+                    <div class="form__row flex-container">
+                        <div class="input-holder">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="input-holder">
+                            <label for="email2" class="form__label">E-mail</label>
+                            <input type="email" id="email2" name="email" class="form__input" required>
+                        </div>
+                    </div>
+                    <div class="form__row flex-container">
+                        <div class="input-holder">
+                            <label for="counrty" class="form__label">Country</label>
+                            <select name="counrty" id="country-profile" class="form__select">
+                                <option>Select</option>
+                                <option value="ua">Ukraine</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="fr">France</option>
+                                <option value="es">Spain</option>
+                                <option value="it">Italy</option>
+                                <option value="pl">Poland</option>
+                                <option value="de">Germany</option>
+                                <option value="no">Norway</option>
+                                <option value="at">Australia</option>
+                            </select>
+                        </div>
+                        <div class="input-holder">
+                            <label for="city" class="form__label">City</label>
+                            <input type="text" id="city-profile" name="city" class="form__input" required>  
+                        </div>
+                    </div>
+                    <div class="form__row flex-container">
+                        <div class="input-holder">
+                            <label class="form__label">Zip Code</label>
+                            <input class="form__input" type="text" maxlength="5"/>
+                        </div>
+                        <div class="input-holder">
+                            <label class="form__label" for="tel">Phone Number</label>
+                            <input class="form__input" type="tel" required>
+                        </div>    
+                    </div>
+                    <div class="form__row">
+                        <button class="form__btn form__btn_short" type="submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
