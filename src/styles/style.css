@@ -88,10 +88,6 @@ body {
     outline: 1px solid #007BFF;
 }
 
-.form__option {
-    color:#545454;
-}
-
 .form__input_long {
     width: 100%;
     margin-bottom: 7px;
@@ -264,6 +260,42 @@ body {
     font-weight: 700;
 }
 
+.form__input-holder {
+    position: relative;
+}
+.form__arrows {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 33px;
+    right: 5px;  
+}
+
+.form__arrows::before {
+    content:'';
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 6px solid #969696;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.form__arrows::after {
+    content:'';
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 6px solid #969696;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
 
 
 
