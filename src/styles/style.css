@@ -242,6 +242,13 @@ body {
     cursor: pointer;
     text-align: right;
     padding-right: 10px;
+    position: relative;
+}
+
+.userpic__icon {
+    position: absolute;
+    top: 6px;
+    right: 8px;
 }
 
 .card-account__footer {
@@ -295,6 +302,16 @@ body {
     position: absolute;
     top: 12px;
     right: 0;
+}
+
+.form__btn_reset {
+    position: relative;
+}
+
+.form__btn-pic {
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 
